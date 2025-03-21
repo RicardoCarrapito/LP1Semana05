@@ -1,12 +1,17 @@
 ﻿using System;
 using Spectre.Console;
-
+using SoGoodLib;
 namespace LevelTwo
 {
     public class Program
     {
         private static void Main(string[] args)
         {   
+            
+            string message = SoGoodClass.SoGoodMethod();
+            Console.WriteLine(message);
+        
+            
             if(args.Length>0)
             {
             string nome =args[0];
